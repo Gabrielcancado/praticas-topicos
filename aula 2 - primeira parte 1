@@ -1,21 +1,23 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
 int main()
 {
     int x;
-    int y= -1;
-    int r;
+    int y = -1;
+    int r = 1;
     cout << "Insira um numero inteiro" << endl;
     cin >> x;
     while (y<0){
     cout << "insira um numero inteiro nao negativo" << endl;
     cin >> y;
     }
-    r = pow(x,y);
-    cout << "o primeiro numero elevado ao segundo resulta em " << r << endl;
+    while (y>0){
+        r = r * x;
+        y = y-1;
+    }
+    cout << "o primeiro numero elevado ao segundo resulta em " << r;
 
     return 0;
 }
