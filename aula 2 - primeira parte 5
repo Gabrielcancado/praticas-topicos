@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, c;
+    float r, t=1;
+    cout << "Insira um numero inteiro e positivo" << endl;
+    cin >> n;
+    c = n;
+    while (t <= n){
+        r = r + (t/c);
+        t++;
+        c--;
+    }
+    cout << "O resultado e: " << r;
+    return 0;
+}
