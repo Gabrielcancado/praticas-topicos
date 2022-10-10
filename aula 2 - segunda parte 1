@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float n = 1, d = 1, r = 0;
+    while (d < 50){
+    r = r + (n/d);
+    n = n + 2;
+    d++;
+    }
+    cout << r;
+}
