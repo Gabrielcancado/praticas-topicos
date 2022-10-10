@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float n = 1, d = 50, r = 0;
+    while (d > 1){
+    r = r + (pow(2,n)) / d;
+    d--;
+    n++;
+    }
+    cout << r;
+}
