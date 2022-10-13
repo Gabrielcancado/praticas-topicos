@@ -1,0 +1,39 @@
+#include <iostream>
+#include <stdlib.h>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int b;
+    int algarismos=0;
+    int i;
+    int j;
+    int r=0;
+
+    cout<<"Digite um numero na base binaria\n";
+    cin>>b;
+
+    for (i=0;i>=0;i++){
+        if((b/(pow(10,i)))>=1){
+            algarismos++;
+        }
+        else {
+            i=-2;
+        }
+    }
+
+    j=algarismos;
+
+    do
+    {
+        if (b>=pow(10,j)){
+            r=(r+pow(2,j));
+            b=b-pow(10,j);
+        }
+        j--;
+    }
+    while (b>0);
+
+    cout<<"o numero na base decimal equivale a "<<r;
+}
