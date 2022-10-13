@@ -1,15 +1,33 @@
 #include <iostream>
+#include <stdlib.h>
 #include <math.h>
-
 using namespace std;
 
 int main()
 {
-    float s, n=1, pi, f;
-    while (1/(pow(n,3)) > 0.0001){
-    s = s + (1/(pow(n,3)));
-    n = n+ 2;
+    float soma=0;
+    float j=2;
+    float pi;
+    float i=0;
+    float r;
+    float c;
+
+
+    for (i=1; i>0; i=i+2) {
+        if (pow(1/pow(i,3),2)>=pow(10,-8)) {
+            soma=soma+(pow((-1),j)/pow(i,3));
+        }
+        else {
+            i=-2;
+        }
+        j++;
     }
-    f = s * 32;
-    cout << f;
+
+    soma=soma*32;
+    pi=cbrt(soma);
+    cout << "informe um raio por favor" << endl;
+    cin >> r;
+    r = r * 2;
+    c = r * pi;
+    cout << "sua circunferencia vale " << c;
 }
