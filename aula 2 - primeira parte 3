@@ -1,0 +1,42 @@
+#include <iostream>
+#include <stdlib.h>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int b=0;
+    int algarismos=0;
+    int i;
+    int n;
+    int decimaldividido;
+
+    cout << "Digite um numero na base decimal\n";
+    cin >> n;
+    decimaldividido=n;
+
+    for (i=0;i>=0;i++){
+        if(decimaldividido/2>=1){
+            decimaldividido=decimaldividido/2;
+            algarismos++;
+        }
+        else {
+            i=-2;
+        }
+    }
+
+    algarismos++;
+    i=1;
+
+    do
+    {
+        if((n%2)==1){
+            b=b+pow(10,(i-1));
+        }
+        n=n/2;
+        i++;
+    }
+    while(i<=algarismos);
+
+    cout << "o numero na base binaria equivale a " << b;
+}
