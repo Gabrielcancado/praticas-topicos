@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, n;
+    float x, y, somax, somay, somaxy, somax2, a, b;
+    cout << "Quantos pontos deseja inserir" << endl;
+    cin >> n;
+    for (i=1; i<=n; i++){
+    cout << "insira a coordenada x do ponto" << endl;
+    cin >> x;
+    cout << "insira a coordenada y do ponto" << endl;
+    cin >> y;
+
+    somax = somax + x;
+    somay = somay + y;
+    somaxy = somaxy + (x*y);
+    somax2 = somax2 + (x*x);
+    }
+    a = ((n * somaxy) - (somax * somay)) / ((n * somax2) - (somax * somax));
+    b = ((somay * somax2) - (somax * somaxy)) / ((n * somax2) - (somax * somax));
+    cout << "coeficiente angular e linear usando o metodo dos minimos quadrados: " << endl;
+    cout << "coeficiente angular: " << a << endl;
+    cout << "coeficiente linear: " << b << endl;
+    return 0;
+}
