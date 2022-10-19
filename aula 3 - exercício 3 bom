@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float y, x;
+    int n, i;
+    cout << "insira um numero por favor" << endl;
+    cin >> y;
+    x = y / 2;
+    cout << "insira quantas aproximacoes deseja calcular" << endl;
+    cin >> n;
+    cout << "a raiz desse numero pelo metodo de aproximacoes sucetivas de newton" << endl;
+    for (i=1; i<=n; i++){
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    }
+    return 0;
+}
