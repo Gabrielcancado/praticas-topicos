@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float y, x;
+    cout << "insira um numero por favor" << endl;
+    cin >> y;
+    cout << "a raiz desse numero pelo metodo de aproximacoes sucetivas de newton" << endl;
+    x = y / 2;
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+    x = ((x * x) + y) / (2 * x);
+    cout << x << endl;
+
+
+    return 0;
+}
