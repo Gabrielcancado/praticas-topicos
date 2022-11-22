@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+class busca{
+    private:
+
+    public:
+
+    void teste(int a){
+
+    }
+
+};
+
+int main()
+{
+    int v, i, r;
+    cout << "Insira quantos dados deseja inserir em seu vetor" << endl;
+    cin >> v;
+    char vetor[v];
+    v = v-1;
+    for (i=0; i<=v; i++){
+        cout << "insira o valor da " << (i+1) << " posicao" << endl;
+        cin >> vetor[i];
+    }
+    system("pause");
+    system("cls");
+
+    cout << "vetor criado, o que deseja fazer?" << endl;
+    cout << "1. buscar um elemento do vetor" << endl << "2. buscar a primeira vez que um elemento aparece" << endl << "3. buscar o maior e o menor elemento do vetor" << endl << "4. buscar qual elemento aparece mais vezes no vetor" << endl;
+    cin >> r;
+
+
+
+
+
+    return 0;
+}
